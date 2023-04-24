@@ -1,0 +1,164 @@
+.converter {
+    background-color: #340E3E;
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.converter-title {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.converter-form {
+    display: flex;
+    align-items: center;
+}
+
+.container-select {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    border-bottom: 1px #FFF solid;
+    background: #340E3E;
+    background-image: none;
+    flex: 1;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+    color: #FFF;
+}
+
+.select:hover::after {
+    color: gray;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 270px;
+    height: 40px;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: .25em;
+    margin-bottom: 20px;
+}
+
+.converter-form .arrows {
+    width: 25px;
+    height: 30px;
+}
+
+.container-quantity {
+    display: flex;
+    color: #FFF;
+    gap: 20px;
+    width: 300px;
+    margin-left: 55px;
+} 
+
+.input {
+    -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: 0;
+        box-shadow: none;
+        border-top: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
+        background: #340E3E;
+        background-image: none;
+        flex: 1;
+        color: #fff;
+        font-size: 1em;
+        border-bottom: 1px #FFF solid;
+        text-align: right;
+}
+
+.input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.container-result {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+.container-result img:hover {
+    background-image: url('../../assets/likeF.png');
+}
+
+.container-result p {
+    font-weight: 600;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    color: #FFF;
+}
+
+@media (max-width: 380px) {
+    .converter {
+        width: 320px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 40px;
+    }
+    .converter-title {
+        color: #FFF;
+        margin-bottom: 10px;
+    }
+   .converter-form {
+       display: block;
+   }
+   .container-select {
+       gap: 10px;
+   }
+  .container-quantity {
+      margin-left: 0px;
+      width: 270px;
+      margin-bottom: 20px;
+  }
+  .result {
+    margin-left: 140px;
+  }
+}

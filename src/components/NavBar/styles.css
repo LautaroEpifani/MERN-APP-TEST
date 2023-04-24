@@ -1,0 +1,43 @@
+.container-border {
+    border-bottom: 1px #340E3E solid;
+}
+
+.container-nav {
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.nav {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+
+.nav-img {
+    width: 20px;
+    height: 20px;
+    color: #340E3E;
+}
+
+.nav-title {
+    align-items: center;
+    color: #340E3E;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+}
+
+@media (max-width: 380px) {
+    .nav {
+        width: 320px;
+        padding-left: 10px;
+    }
+}
